@@ -2,3 +2,4 @@ Suunnittelun vaiheet:
 
 1. Suunnitellaan pohja menulle
 2. Lisätään allergeenit näkyville
+3. Toteutetaan testitapaukset
