@@ -1,0 +1,2 @@
+Tässä haarassa korjataan responsiivisuusongelma hääverkkosivustolla.
+Nettisivujen koodia on nyt muutettu niin, että navigaatiovalikko näkyy oikein myös mobiililaitteilla.
