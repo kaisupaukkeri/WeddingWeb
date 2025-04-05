@@ -1,0 +1,2 @@
+Suunnittelun vaiheet:
+1. Suunnitellaan pohja menulle
