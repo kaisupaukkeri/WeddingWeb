@@ -1,0 +1,5 @@
+Navigaatiopalkki:
+Etusivu, Hääohjelma, Saapumisohjeet, Vireskirja, Kuvagalleria, Blogi
+
+Lisätty mobiiliin hampparivalikko
+Korjattu hoverin ja fontin värit
