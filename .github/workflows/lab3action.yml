@@ -32,4 +32,6 @@ jobs: # The jobs that run in this workflow
 
 # Comment on when an issue is closed
 
+Tää on mun t. petra
+
 # Comment on when an users opens the first pull request 
