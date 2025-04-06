@@ -1,0 +1,5 @@
+Testitapaukset on tehty sivulle, jossa ovat ajo-ohjeet nettisivuille.
+Suoritetut testit:
+- selaintestit
+- responsiivisuustestit
+- reittitestit eri lähtöpisteistä
