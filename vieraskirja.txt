@@ -1,0 +1,4 @@
+Vieraskirjan moderointi
+1. rakennetaan vieraskirjaan automaattimoderointi, viestit tulevat näkyviin vasta moderoinnin läpikäynnin jälkeen
+2. edellytetään, että kommentoija kirjoittaa nimensä
+3. ei tarjota mahdollisuutta viestin muokkaamiseen tai poistamiseen
