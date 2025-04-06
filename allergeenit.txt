@@ -4,3 +4,5 @@ Suunnittelun vaiheet:
 2. Lisätään allergeenit näkyville
 3. Toteutetaan testitapaukset
 4. Luodaan pohja menulle
+
+Nämä vaiheet on totetutettu ja menu saatu luotua sivustolle.
