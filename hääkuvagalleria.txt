@@ -1,0 +1,1 @@
+Luodaan häistä otetuille kuville galleria, johon vieraat voivat lisätä kuvia sekä käydä lataamassa kuvia itselleen.
