@@ -2,11 +2,13 @@
 
 
 name: Label & comment issues #the name of the workflow
-on: # This action will trigger when an issue is reopened or opened.
+on: # This action will trigger when an issue is reopened or opened or closed.
   issues:
     types:
       - reopened
       - opened
+      # petran lisäys
+      - closed
   
     pull_request: # sinin lisäys
       types:
@@ -35,7 +37,28 @@ jobs: # The jobs that run in this workflow
           body: | # The body of the comment is a message thanking the user for opening the issue.
            Thanks for opening this issue! We'll take a look as soon as possible.
 
-# Comment on when an issue is closed # Tää on mun t. petra
+# Comment on when an issue is closed # Petra
+    comment_closed_issues: 
+      runs-on: ubuntu-latest
+      permissions: 
+        issues: write
+      steps: 
+      - name: attach label to issues 
+        uses: actions/github-script@v6 
+        with:
+          script: | 
+            github.rest.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ["issue", "fix"]
+            })
+      - name: Comment on closed issue 
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: | 
+           Issue is now resolved. Thanks!
 
 # Comment on when an users opens the first pull request # Sini
 greet_first_PR:
