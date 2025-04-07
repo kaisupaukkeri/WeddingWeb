@@ -38,11 +38,11 @@ jobs: # The jobs that run in this workflow
            Thanks for opening this issue! We'll take a look as soon as possible.
 
 # Comment on when an issue is closed # Petra
-    comment_closed_issues: 
-      runs-on: ubuntu-latest
-      permissions: 
-        issues: write
-      steps: 
+  comment_closed_issues: 
+    runs-on: ubuntu-latest
+    permissions: 
+      issues: write
+    steps: 
       - name: attach label to issues 
         uses: actions/github-script@v6 
         with:
@@ -61,8 +61,8 @@ jobs: # The jobs that run in this workflow
            Issue is now resolved. Thanks!
 
 # Comment on when an users opens the first pull request # Sini
-greet_first_PR:
-  if: github.event_name == 'pull_request' && github.event.action == 'opened'
+  greet_first_PR:
+    if: github.event_name == 'pull_request' && github.event.action == 'opened'
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
