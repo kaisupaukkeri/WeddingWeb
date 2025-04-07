@@ -39,6 +39,7 @@ jobs: # The jobs that run in this workflow
 
 # Comment on when an issue is closed # Petra
   comment_closed_issues: 
+    if: github.event.action == 'closed'
     runs-on: ubuntu-latest
     permissions: 
       issues: write
