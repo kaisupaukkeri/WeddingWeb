@@ -62,7 +62,7 @@ jobs: # The jobs that run in this workflow
            Issue is now resolved. Thanks!
 
 # Comment on when an users opens the first pull request # Sini
-  greet_first_PR:
+  greet_first_pr:
     if: github.event_name == 'pull_request' && github.event.action == 'opened'
     runs-on: ubuntu-latest
     permissions:
