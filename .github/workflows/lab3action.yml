@@ -1,6 +1,3 @@
-# SINI JA PETRA MUOKKAA TÄTÄ
-
-
 name: Label & comment issues #the name of the workflow
 on: # This action will trigger when an issue is reopened or opened or closed.
   issues:
@@ -10,8 +7,8 @@ on: # This action will trigger when an issue is reopened or opened or closed.
       # petran lisäys
       - closed
   
-    pull_request: # sinin lisäys
-      types:
+  pull_request: # sinin lisäys, korjattu taso
+    types:
       - opened
 
 jobs: # The jobs that run in this workflow
@@ -74,4 +71,4 @@ jobs: # The jobs that run in this workflow
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: ''
           pr-message: |
-            Hi @${{ github.actor }}! Gongrats for your first pull request!
+            Hi @${{ github.actor }}! Congrats on your first pull request! 🎉
