@@ -1,0 +1,1 @@
+Tässä testataan toimiiko RepoRules-sääntö, jossa on määritelty main-haaran sääntö, että vaaditaan kaksi hyväksyntää ennen pull requestin hyväksyntää.
